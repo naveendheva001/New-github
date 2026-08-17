@@ -1,0 +1,1180 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: function.spec.js >> Myntra Minimum Price
+- Location: tests\function.spec.js:4:5
+
+# Error details
+
+```
+ReferenceError: min is not defined
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - text: "| | |"
+    - generic:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - generic [ref=e7]:
+          - link "Men" [ref=e10] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=e13] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=e16] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=e19] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=e22] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=e25] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - generic [ref=e27]:
+            - link "Studio" [ref=e28] [cursor=pointer]:
+              - /url: /studio/home
+            - superscript [ref=e30]: new
+      - generic [ref=e31]:
+        - generic [ref=e32]: Profile
+        - link "Wishlist":
+          - /url: /wishlist
+        - link "Bag":
+          - /url: /checkout/cart
+      - textbox "Search for products, brands and more" [ref=e41]
+  - generic [ref=e45]:
+    - main [ref=e46]:
+      - list [ref=e49]:
+        - listitem [ref=e50]:
+          - link "Home" [ref=e51] [cursor=pointer]:
+            - /url: /?src=bc
+          - text: /
+        - listitem [ref=e52]:
+          - link "Clothing" [ref=e53] [cursor=pointer]:
+            - /url: /clothing?src=bc
+          - text: /
+        - listitem [ref=e54]:
+          - link "Tshirts" [ref=e55] [cursor=pointer]:
+            - /url: /tshirts?src=bc
+          - text: /
+        - listitem [ref=e56]: Boy Tshirts
+      - generic [ref=e58]:
+        - heading "Boy Tshirts" [level=1] [ref=e59]
+        - generic [ref=e60]: "- 74117 items"
+      - generic [ref=e61]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: FILTERS
+          - generic [ref=e66]:
+            - generic [ref=e67]: Brand
+            - list [ref=e70]:
+              - listitem [ref=e71]:
+                - generic [ref=e72] [cursor=pointer]:
+                  - text: Arvesa
+                  - generic [ref=e73]: (4969)
+              - listitem [ref=e75]:
+                - generic [ref=e76] [cursor=pointer]:
+                  - text: BAESD
+                  - generic [ref=e77]: (3462)
+              - listitem [ref=e79]:
+                - generic [ref=e80] [cursor=pointer]:
+                  - text: YK
+                  - generic [ref=e81]: (1691)
+              - listitem [ref=e83]:
+                - generic [ref=e84] [cursor=pointer]:
+                  - text: Pantaloons Junior
+                  - generic [ref=e85]: (1568)
+              - listitem [ref=e87]:
+                - generic [ref=e88] [cursor=pointer]:
+                  - text: U.S. Polo Assn. Kids
+                  - generic [ref=e89]: (1438)
+              - listitem [ref=e91]:
+                - generic [ref=e92] [cursor=pointer]:
+                  - text: Cute Pals
+                  - generic [ref=e93]: (1376)
+              - listitem [ref=e95]:
+                - generic [ref=e96] [cursor=pointer]:
+                  - text: NUSYL
+                  - generic [ref=e97]: (1345)
+              - listitem [ref=e99]:
+                - generic [ref=e100] [cursor=pointer]:
+                  - text: CODEZ
+                  - generic [ref=e101]: (1217)
+            - generic [ref=e103] [cursor=pointer]: + 665 more
+          - generic [ref=e104]:
+            - generic [ref=e105]: Price
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - button [ref=e111]
+                - button [ref=e113]
+              - generic [ref=e115]: ₹100 - ₹6,700+
+          - generic [ref=e116]:
+            - generic [ref=e117]: Color
+            - list [ref=e120]:
+              - listitem [ref=e121]:
+                - generic [ref=e122] [cursor=pointer]:
+                  - text: White
+                  - generic [ref=e124]: (11674)
+              - listitem [ref=e126]:
+                - generic [ref=e127] [cursor=pointer]:
+                  - text: Blue
+                  - generic [ref=e129]: (9706)
+              - listitem [ref=e131]:
+                - generic [ref=e132] [cursor=pointer]:
+                  - text: Black
+                  - generic [ref=e134]: (7648)
+              - listitem [ref=e136]:
+                - generic [ref=e137] [cursor=pointer]:
+                  - text: Yellow
+                  - generic [ref=e139]: (6748)
+              - listitem [ref=e141]:
+                - generic [ref=e142] [cursor=pointer]:
+                  - text: Green
+                  - generic [ref=e144]: (6223)
+              - listitem [ref=e146]:
+                - generic [ref=e147] [cursor=pointer]:
+                  - text: Red
+                  - generic [ref=e149]: (5391)
+              - listitem [ref=e151]:
+                - generic [ref=e152] [cursor=pointer]:
+                  - text: Navy Blue
+                  - generic [ref=e154]: (3540)
+            - generic [ref=e156] [cursor=pointer]: + 40 more
+          - generic [ref=e158]:
+            - generic [ref=e159]: Discount Range
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - generic [ref=e162] [cursor=pointer]: 10% and above
+              - listitem [ref=e163]:
+                - generic [ref=e164] [cursor=pointer]: 20% and above
+              - listitem [ref=e165]:
+                - generic [ref=e166] [cursor=pointer]: 30% and above
+              - listitem [ref=e167]:
+                - generic [ref=e168] [cursor=pointer]: 40% and above
+              - listitem [ref=e169]:
+                - generic [ref=e170] [cursor=pointer]: 50% and above
+              - listitem [ref=e171]:
+                - generic [ref=e172] [cursor=pointer]: 60% and above
+              - listitem [ref=e173]:
+                - generic [ref=e174] [cursor=pointer]: 70% and above
+              - listitem [ref=e175]:
+                - generic [ref=e176] [cursor=pointer]: 80% and above
+        - generic [ref=e178]:
+          - generic [ref=e181]:
+            - generic [ref=e182]: "Sort by : Recommended"
+            - list [ref=e188]:
+              - listitem [ref=e189] [cursor=pointer]:
+                - heading "Add-Ons" [level=4] [ref=e191]
+              - listitem [ref=e193] [cursor=pointer]:
+                - heading "Age" [level=4] [ref=e195]
+              - listitem [ref=e197] [cursor=pointer]:
+                - heading "Bundles" [level=4] [ref=e199]
+              - listitem [ref=e201] [cursor=pointer]:
+                - heading "Character" [level=4] [ref=e203]
+              - listitem [ref=e205] [cursor=pointer]:
+                - heading "Closure" [level=4] [ref=e207]
+              - listitem [ref=e209] [cursor=pointer]:
+                - heading "Country of Origin" [level=4] [ref=e211]
+              - listitem [ref=e213] [cursor=pointer]:
+                - heading "Fabric Types" [level=4] [ref=e215]
+              - listitem [ref=e217] [cursor=pointer]:
+                - generic [ref=e218]: + 26 more
+          - generic [ref=e221]:
+            - list [ref=e222]:
+              - listitem [ref=e223]:
+                - generic [ref=e224]:
+                  - generic [ref=e225]: "4.8"
+                  - generic [ref=e227]:
+                    - generic [ref=e228]: "|"
+                    - text: "28"
+                - generic [ref=e229]: AD
+                - link "RARE ONES Boys Graphic Printed Cotton T-shirt RARE ONES Graphic Printed Cotton T-shirt Rs. 549Rs. 999(45% OFF) Only Few Left!" [ref=e230] [cursor=pointer]:
+                  - /url: tshirts/rare+ones/rare-ones-boys-graphic-printed-cotton-t-shirt/37259911/buy
+                  - img "RARE ONES Boys Graphic Printed Cotton T-shirt" [ref=e236]
+                  - generic [ref=e237]:
+                    - heading "RARE ONES" [level=3] [ref=e238]
+                    - heading "Graphic Printed Cotton T-shirt" [level=4] [ref=e239]
+                    - generic [ref=e240]:
+                      - generic [ref=e241]:
+                        - generic [ref=e242]: Rs. 549
+                        - generic [ref=e243]: Rs. 999
+                      - text: (45% OFF)
+                    - generic [ref=e244]: Only Few Left!
+              - listitem [ref=e245]:
+                - generic [ref=e246]:
+                  - generic [ref=e247]: "4.6"
+                  - generic [ref=e249]:
+                    - generic [ref=e250]: "|"
+                    - text: "16"
+                - generic [ref=e251]: AD
+                - link "RARE ONES Boys Graphic Printed Drop-Shoulder Sleeves Cotton T-shirt RARE ONES Graphic Printed Drop-Shoulder T-shirt Rs. 549Rs. 999(45% OFF) Only Few Left!" [ref=e252] [cursor=pointer]:
+                  - /url: tshirts/rare+ones/rare-ones-boys-graphic-printed-drop-shoulder-sleeves-cotton-t-shirt/37259895/buy
+                  - img "RARE ONES Boys Graphic Printed Drop-Shoulder Sleeves Cotton T-shirt" [ref=e258]
+                  - generic [ref=e259]:
+                    - heading "RARE ONES" [level=3] [ref=e260]
+                    - heading "Graphic Printed Drop-Shoulder T-shirt" [level=4] [ref=e261]
+                    - generic [ref=e262]:
+                      - generic [ref=e263]:
+                        - generic [ref=e264]: Rs. 549
+                        - generic [ref=e265]: Rs. 999
+                      - text: (45% OFF)
+                    - generic [ref=e266]: Only Few Left!
+              - listitem [ref=e267]:
+                - generic [ref=e268]:
+                  - generic [ref=e269]: "4.4"
+                  - generic [ref=e271]:
+                    - generic [ref=e272]: "|"
+                    - text: "48"
+                - link "Marks & Spencer Pure Cotton Plain T-Shirt Marks & Spencer Boys Pure Cotton Tshirt Rs. 679Rs. 799(15% OFF) Only Few Left!" [ref=e273] [cursor=pointer]:
+                  - /url: tshirts/marks+%26+spencer/marks--spencer-pure-cotton-plain-t-shirt/40651844/buy
+                  - img "Marks & Spencer Pure Cotton Plain T-Shirt" [ref=e279]
+                  - generic [ref=e280]:
+                    - heading "Marks & Spencer" [level=3] [ref=e281]
+                    - heading "Boys Pure Cotton Tshirt" [level=4] [ref=e282]
+                    - generic [ref=e283]:
+                      - generic [ref=e284]:
+                        - generic [ref=e285]: Rs. 679
+                        - generic [ref=e286]: Rs. 799
+                      - text: (15% OFF)
+                    - generic [ref=e287]: Only Few Left!
+              - listitem [ref=e288]:
+                - generic [ref=e289]:
+                  - generic [ref=e290]: "3.4"
+                  - generic [ref=e292]:
+                    - generic [ref=e293]: "|"
+                    - text: "229"
+                - link "VP TEXX Boys 4 Printed T-shirt VP TEXX Boys Printed T-shirt Rs. 461Rs. 1699(73% OFF)" [ref=e294] [cursor=pointer]:
+                  - /url: tshirts/vp+texx/vp-texx-boys-4-printed-t-shirt/44073995/buy
+                  - img "VP TEXX Boys 4 Printed T-shirt" [ref=e300]
+                  - generic [ref=e301]:
+                    - heading "VP TEXX" [level=3] [ref=e302]
+                    - heading "Boys Printed T-shirt" [level=4] [ref=e303]
+                    - generic [ref=e304]:
+                      - generic [ref=e305]:
+                        - generic [ref=e306]: Rs. 461
+                        - generic [ref=e307]: Rs. 1699
+                      - text: (73% OFF)
+              - listitem [ref=e308]:
+                - generic [ref=e309]:
+                  - generic [ref=e310]: "4.6"
+                  - generic [ref=e312]:
+                    - generic [ref=e313]: "|"
+                    - text: "25"
+                - generic [ref=e314]: AD
+                - link "KiddoPanti Boys Cotton Tshirts KiddoPanti Boys Cotton Tshirts Rs. 377Rs. 499(24% OFF)" [ref=e315] [cursor=pointer]:
+                  - /url: tshirts/kiddopanti/kiddopanti-boys-cotton-tshirts/39416665/buy
+                  - img "KiddoPanti Boys Cotton Tshirts" [ref=e321]
+                  - generic [ref=e322]:
+                    - heading "KiddoPanti" [level=3] [ref=e323]
+                    - heading "Boys Cotton Tshirts" [level=4] [ref=e324]
+                    - generic [ref=e325]:
+                      - generic [ref=e326]:
+                        - generic [ref=e327]: Rs. 377
+                        - generic [ref=e328]: Rs. 499
+                      - text: (24% OFF)
+              - listitem [ref=e329]:
+                - generic [ref=e330]:
+                  - generic [ref=e331]: "4.6"
+                  - generic [ref=e333]:
+                    - generic [ref=e334]: "|"
+                    - text: "962"
+                - link "YK X Minute Mirth Boys Typography Printed T-shirt YK X Minute Mirth Boys Typography Printed T-shirt Rs. 205Rs. 499(59% OFF)" [ref=e335] [cursor=pointer]:
+                  - /url: tshirts/yk+x+minute+mirth/yk-x-minute-mirth-boys-typography-printed-t-shirt/35707772/buy
+                  - img "YK X Minute Mirth Boys Typography Printed T-shirt" [ref=e341]
+                  - generic [ref=e342]:
+                    - heading "YK X Minute Mirth" [level=3] [ref=e343]
+                    - heading "Boys Typography Printed T-shirt" [level=4] [ref=e344]
+                    - generic [ref=e345]:
+                      - generic [ref=e346]:
+                        - generic [ref=e347]: Rs. 205
+                        - generic [ref=e348]: Rs. 499
+                      - text: (59% OFF)
+              - listitem [ref=e349]:
+                - link "YK Boys Printed T-shirt YK Kid's Graphic T-shirt Rs. 447Rs. 899(50% OFF)" [ref=e350] [cursor=pointer]:
+                  - /url: tshirts/yk/yk-boys-printed-t-shirt/44754576/buy
+                  - img "YK Boys Printed T-shirt" [ref=e356]
+                  - generic [ref=e357]:
+                    - heading "YK" [level=3] [ref=e358]
+                    - heading "Kid's Graphic T-shirt" [level=4] [ref=e359]
+                    - generic [ref=e360]:
+                      - generic [ref=e361]:
+                        - generic [ref=e362]: Rs. 447
+                        - generic [ref=e363]: Rs. 899
+                      - text: (50% OFF)
+              - listitem [ref=e364]:
+                - generic [ref=e365]: AD
+                - link "Friskers Boys Polo Collar T-shirt Friskers Boys Polo Collar T-shirt Rs. 585Rs. 1999(71% OFF)" [ref=e366] [cursor=pointer]:
+                  - /url: tshirts/friskers/friskers-boys-polo-collar-t-shirt/44612684/buy
+                  - img "Friskers Boys Polo Collar T-shirt" [ref=e372]
+                  - generic [ref=e373]:
+                    - heading "Friskers" [level=3] [ref=e374]
+                    - heading "Boys Polo Collar T-shirt" [level=4] [ref=e375]
+                    - generic [ref=e376]:
+                      - generic [ref=e377]:
+                        - generic [ref=e378]: Rs. 585
+                        - generic [ref=e379]: Rs. 1999
+                      - text: (71% OFF)
+              - listitem [ref=e380]:
+                - generic [ref=e381]:
+                  - generic [ref=e382]: "4.1"
+                  - generic [ref=e384]:
+                    - generic [ref=e385]: "|"
+                    - text: 13.7k
+                - link "HELLCAT Boys Pack Of 3 Printed Cotton T-shirt HELLCAT Boys Pack Of 3 Cotton T-shirt Rs. 391Rs. 3897(90% OFF)" [ref=e386] [cursor=pointer]:
+                  - /url: tshirts/hellcat/hellcat-boys-pack-of-3-printed-cotton-t-shirt/22204272/buy
+                  - img "HELLCAT Boys Pack Of 3 Printed Cotton T-shirt" [ref=e392]
+                  - generic [ref=e393]:
+                    - heading "HELLCAT" [level=3] [ref=e394]
+                    - heading "Boys Pack Of 3 Cotton T-shirt" [level=4] [ref=e395]
+                    - generic [ref=e396]:
+                      - generic [ref=e397]:
+                        - generic [ref=e398]: Rs. 391
+                        - generic [ref=e399]: Rs. 3897
+                      - text: (90% OFF)
+              - listitem [ref=e400]:
+                - generic [ref=e401]:
+                  - generic [ref=e402]: "4.5"
+                  - generic [ref=e404]:
+                    - generic [ref=e405]: "|"
+                    - text: 4.4k
+                - link "H&M Printed Cotton T-shirt H&M Printed Cotton T-shirt Rs. 299Rs. 399(25% OFF)" [ref=e406] [cursor=pointer]:
+                  - /url: tshirts/h%26m/hm-printed-cotton-t-shirt/41419111/buy
+                  - img "H&M Printed Cotton T-shirt" [ref=e412]
+                  - generic [ref=e413]:
+                    - heading "H&M" [level=3] [ref=e414]
+                    - heading "Printed Cotton T-shirt" [level=4] [ref=e415]
+                    - generic [ref=e416]:
+                      - generic [ref=e417]:
+                        - generic [ref=e418]: Rs. 299
+                        - generic [ref=e419]: Rs. 399
+                      - text: (25% OFF)
+              - listitem [ref=e420]:
+                - generic [ref=e421]:
+                  - generic [ref=e422]: "4.5"
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: "|"
+                    - text: "67"
+                - generic [ref=e426]: AD
+                - link "TotzTouch Boys Polo Collar T-Shirt TotzTouch Boys Polo Collar T-Shirt Rs. 570Rs. 1600(64% OFF)" [ref=e427] [cursor=pointer]:
+                  - /url: tshirts/totztouch/totztouch-boys-polo-collar-t-shirt/40069358/buy
+                  - img "TotzTouch Boys Polo Collar T-Shirt" [ref=e433]
+                  - generic [ref=e434]:
+                    - heading "TotzTouch" [level=3] [ref=e435]
+                    - heading "Boys Polo Collar T-Shirt" [level=4] [ref=e436]
+                    - generic [ref=e437]:
+                      - generic [ref=e438]:
+                        - generic [ref=e439]: Rs. 570
+                        - generic [ref=e440]: Rs. 1600
+                      - text: (64% OFF)
+              - listitem [ref=e441]:
+                - generic [ref=e442]:
+                  - generic [ref=e443]: "4.7"
+                  - generic [ref=e445]:
+                    - generic [ref=e446]: "|"
+                    - text: "43"
+                - link "Decathlon Kids Knitted T-shirts Rs. 349Rs. 549(36% OFF)" [ref=e447] [cursor=pointer]:
+                  - /url: tshirts/decathlon/decathlon-kipsta---kids-blue-essential-moisture-managing-football-jersey/39714997/buy
+                  - generic [ref=e452]:
+                    - heading "Decathlon" [level=3] [ref=e453]
+                    - heading "Kids Knitted T-shirts" [level=4] [ref=e454]
+                    - generic [ref=e455]:
+                      - generic [ref=e456]:
+                        - generic [ref=e457]: Rs. 349
+                        - generic [ref=e458]: Rs. 549
+                      - text: (36% OFF)
+              - listitem [ref=e459]:
+                - generic [ref=e460]:
+                  - generic [ref=e461]: "4.7"
+                  - generic [ref=e463]:
+                    - generic [ref=e464]: "|"
+                    - text: "6"
+                - link "FIONAA TRENDZ Kids Printed T-shirt Rs. 303Rs. 799(62% OFF)" [ref=e465] [cursor=pointer]:
+                  - /url: tshirts/fionaa+trendz/fionaa-trendz-kids-printed-t-shirt/43250908/buy
+                  - generic [ref=e470]:
+                    - heading "FIONAA TRENDZ" [level=3] [ref=e471]
+                    - heading "Kids Printed T-shirt" [level=4] [ref=e472]
+                    - generic [ref=e473]:
+                      - generic [ref=e474]:
+                        - generic [ref=e475]: Rs. 303
+                        - generic [ref=e476]: Rs. 799
+                      - text: (62% OFF)
+              - listitem [ref=e477]:
+                - generic [ref=e478]:
+                  - generic [ref=e479]: "4.9"
+                  - generic [ref=e481]:
+                    - generic [ref=e482]: "|"
+                    - text: "9"
+                - generic [ref=e483]: AD
+                - link "NEXT Boys Colourblocked T-shirt Rs. 539Rs. 899(40% OFF)" [ref=e484] [cursor=pointer]:
+                  - /url: tshirts/next/next-boys-colourblocked-drop-shoulder-sleeves-pure-cotton-t-shirt/39069077/buy
+                  - generic [ref=e489]:
+                    - heading "NEXT" [level=3] [ref=e490]
+                    - heading "Boys Colourblocked T-shirt" [level=4] [ref=e491]
+                    - generic [ref=e492]:
+                      - generic [ref=e493]:
+                        - generic [ref=e494]: Rs. 539
+                        - generic [ref=e495]: Rs. 899
+                      - text: (40% OFF)
+              - listitem [ref=e496]:
+                - generic [ref=e497]:
+                  - generic [ref=e498]: "4"
+                  - generic [ref=e500]:
+                    - generic [ref=e501]: "|"
+                    - text: 1.6k
+                - link "HELLCAT Boys Pack Of 5 Printed T-shirt Rs. 685Rs. 6495(89% OFF)" [ref=e502] [cursor=pointer]:
+                  - /url: tshirts/hellcat/hellcat-boys-pack-of-5-typography-printed-cotton-t-shirt/22204502/buy
+                  - generic [ref=e507]:
+                    - heading "HELLCAT" [level=3] [ref=e508]
+                    - heading "Boys Pack Of 5 Printed T-shirt" [level=4] [ref=e509]
+                    - generic [ref=e510]:
+                      - generic [ref=e511]:
+                        - generic [ref=e512]: Rs. 685
+                        - generic [ref=e513]: Rs. 6495
+                      - text: (89% OFF)
+              - listitem [ref=e514]:
+                - generic [ref=e515]:
+                  - generic [ref=e516]: "4.1"
+                  - generic [ref=e518]:
+                    - generic [ref=e519]: "|"
+                    - text: "14"
+                - link "DAMN GUD DG Unisex Black Tshirts Rs. 476Rs. 1000(52% OFF)" [ref=e520] [cursor=pointer]:
+                  - /url: tshirts/damn+gud+dg/damn-gud-dg-unisex-black-tshirts/35458641/buy
+                  - generic [ref=e525]:
+                    - heading "DAMN GUD DG" [level=3] [ref=e526]
+                    - heading "Unisex Black Tshirts" [level=4] [ref=e527]
+                    - generic [ref=e528]:
+                      - generic [ref=e529]:
+                        - generic [ref=e530]: Rs. 476
+                        - generic [ref=e531]: Rs. 1000
+                      - text: (52% OFF)
+              - listitem [ref=e532]:
+                - generic [ref=e533]: AD
+                - link "Elysian closet Kids T-shirt Rs. 493Rs. 599(18% OFF)" [ref=e534] [cursor=pointer]:
+                  - /url: tshirts/elysian+closet/elysian-closet-kids-t-shirt/44519434/buy
+                  - generic [ref=e539]:
+                    - heading "Elysian closet" [level=3] [ref=e540]
+                    - heading "Kids T-shirt" [level=4] [ref=e541]
+                    - generic [ref=e542]:
+                      - generic [ref=e543]:
+                        - generic [ref=e544]: Rs. 493
+                        - generic [ref=e545]: Rs. 599
+                      - text: (18% OFF)
+              - listitem [ref=e546]:
+                - generic [ref=e547]:
+                  - generic [ref=e548]: "4"
+                  - generic [ref=e550]:
+                    - generic [ref=e551]: "|"
+                    - text: "149"
+                - link "YK Kids Hello Kitty Printed T-shirt Rs. 243Rs. 799(70% OFF)" [ref=e552] [cursor=pointer]:
+                  - /url: tshirts/yk/yk-kids-hello-kitty-printed-t-shirt/43447282/buy
+                  - generic [ref=e557]:
+                    - heading "YK" [level=3] [ref=e558]
+                    - heading "Kids Hello Kitty Printed T-shirt" [level=4] [ref=e559]
+                    - generic [ref=e560]:
+                      - generic [ref=e561]:
+                        - generic [ref=e562]: Rs. 243
+                        - generic [ref=e563]: Rs. 799
+                      - text: (70% OFF)
+              - listitem [ref=e564]:
+                - link "NEW KiddoPanti Boys Printed T-shirt Rs. 457Rs. 599(24% OFF) Only Few Left!" [ref=e565] [cursor=pointer]:
+                  - /url: tshirts/kiddopanti/kiddopanti-boys-printed-t-shirt/44434491/buy
+                  - generic [ref=e566]: NEW
+                  - generic [ref=e571]:
+                    - heading "KiddoPanti" [level=3] [ref=e572]
+                    - heading "Boys Printed T-shirt" [level=4] [ref=e573]
+                    - generic [ref=e574]:
+                      - generic [ref=e575]:
+                        - generic [ref=e576]: Rs. 457
+                        - generic [ref=e577]: Rs. 599
+                      - text: (24% OFF)
+                    - generic [ref=e578]: Only Few Left!
+              - listitem [ref=e579]:
+                - generic [ref=e580]: AD
+                - link "Pixel Punk Boys Typography Printed T-shirt Rs. 475Rs. 1999(76% OFF)" [ref=e581] [cursor=pointer]:
+                  - /url: tshirts/pixel+punk/pixel-punk-boys-typography-printed-pure-cotton-t-shirt/44478609/buy
+                  - generic [ref=e586]:
+                    - heading "Pixel Punk" [level=3] [ref=e587]
+                    - heading "Boys Typography Printed T-shirt" [level=4] [ref=e588]
+                    - generic [ref=e589]:
+                      - generic [ref=e590]:
+                        - generic [ref=e591]: Rs. 475
+                        - generic [ref=e592]: Rs. 1999
+                      - text: (76% OFF)
+              - listitem [ref=e593]:
+                - generic [ref=e594]:
+                  - generic [ref=e595]: "4.7"
+                  - generic [ref=e597]:
+                    - generic [ref=e598]: "|"
+                    - text: "397"
+                - link "Kids Ville Spiderman Oversized Tshirt Rs. 649Rs. 999(35% OFF)" [ref=e599] [cursor=pointer]:
+                  - /url: tshirts/kids+ville/kids-ville-boys-spiderman-printed-pure-cotton-round-neck-oversized-tshirt/42050734/buy
+                  - generic [ref=e604]:
+                    - heading "Kids Ville" [level=3] [ref=e605]
+                    - heading "Spiderman Oversized Tshirt" [level=4] [ref=e606]
+                    - generic [ref=e607]:
+                      - generic [ref=e608]:
+                        - generic [ref=e609]: Rs. 649
+                        - generic [ref=e610]: Rs. 999
+                      - text: (35% OFF)
+              - listitem [ref=e611]:
+                - generic [ref=e612]:
+                  - generic [ref=e613]: "4.1"
+                  - generic [ref=e615]:
+                    - generic [ref=e616]: "|"
+                    - text: "88"
+                - link "Eteenz Boys Printed Cotton T-shirt Rs. 167Rs. 299(44% OFF)" [ref=e617] [cursor=pointer]:
+                  - /url: tshirts/eteenz/eteenz-boys-manchester-city-printed-premium-cotton-t-shirt/27123718/buy
+                  - generic [ref=e622]:
+                    - heading "Eteenz" [level=3] [ref=e623]
+                    - heading "Boys Printed Cotton T-shirt" [level=4] [ref=e624]
+                    - generic [ref=e625]:
+                      - generic [ref=e626]:
+                        - generic [ref=e627]: Rs. 167
+                        - generic [ref=e628]: Rs. 299
+                      - text: (44% OFF)
+              - listitem [ref=e629]:
+                - generic [ref=e630]:
+                  - generic [ref=e631]: "3.8"
+                  - generic [ref=e633]:
+                    - generic [ref=e634]: "|"
+                    - text: "44"
+                - generic [ref=e635]: AD
+                - link "Pepe Jeans Boys Printed Cotton T-shirt Rs. 560Rs. 1099(49% OFF) Only Few Left!" [ref=e636] [cursor=pointer]:
+                  - /url: tshirts/pepe+jeans/pepe-jeans-boys-graphic-printed-round-neck-cotton-t-shirt/32582711/buy
+                  - generic [ref=e641]:
+                    - heading "Pepe Jeans" [level=3] [ref=e642]
+                    - heading "Boys Printed Cotton T-shirt" [level=4] [ref=e643]
+                    - generic [ref=e644]:
+                      - generic [ref=e645]:
+                        - generic [ref=e646]: Rs. 560
+                        - generic [ref=e647]: Rs. 1099
+                      - text: (49% OFF)
+                    - generic [ref=e648]: Only Few Left!
+              - listitem [ref=e649]:
+                - generic [ref=e650]:
+                  - generic [ref=e651]: "4.1"
+                  - generic [ref=e653]:
+                    - generic [ref=e654]: "|"
+                    - text: 5.6k
+                - link "HELLCAT Boys Pack Of 5 Cotton T-shirt Rs. 685Rs. 6495(89% OFF)" [ref=e655] [cursor=pointer]:
+                  - /url: tshirts/hellcat/hellcat-boys-pack-of-5-typography-printed-cotton-t-shirt/22204518/buy
+                  - generic [ref=e660]:
+                    - heading "HELLCAT" [level=3] [ref=e661]
+                    - heading "Boys Pack Of 5 Cotton T-shirt" [level=4] [ref=e662]
+                    - generic [ref=e663]:
+                      - generic [ref=e664]:
+                        - generic [ref=e665]: Rs. 685
+                        - generic [ref=e666]: Rs. 6495
+                      - text: (89% OFF)
+              - listitem [ref=e667]:
+                - link "Triptee Boys Donald Duck T-shirt Rs. 294Rs. 999(71% OFF)" [ref=e668] [cursor=pointer]:
+                  - /url: tshirts/triptee/triptee-boys-typography-donald-duck-printed-t-shirt/44092210/buy
+                  - generic [ref=e673]:
+                    - heading "Triptee" [level=3] [ref=e674]
+                    - heading "Boys Donald Duck T-shirt" [level=4] [ref=e675]
+                    - generic [ref=e676]:
+                      - generic [ref=e677]:
+                        - generic [ref=e678]: Rs. 294
+                        - generic [ref=e679]: Rs. 999
+                      - text: (71% OFF)
+              - listitem [ref=e680]:
+                - generic [ref=e681]:
+                  - generic [ref=e682]: "4.2"
+                  - generic [ref=e684]:
+                    - generic [ref=e685]: "|"
+                    - text: "5"
+                - generic [ref=e686]: AD
+                - link "NEXT Boys Pure Cotton T-shirt Rs. 599Rs. 999(40% OFF) Only Few Left!" [ref=e687] [cursor=pointer]:
+                  - /url: tshirts/next/next-boys-graphic-printed-pure-cotton-t-shirt/42154710/buy
+                  - generic [ref=e692]:
+                    - heading "NEXT" [level=3] [ref=e693]
+                    - heading "Boys Pure Cotton T-shirt" [level=4] [ref=e694]
+                    - generic [ref=e695]:
+                      - generic [ref=e696]:
+                        - generic [ref=e697]: Rs. 599
+                        - generic [ref=e698]: Rs. 999
+                      - text: (40% OFF)
+                    - generic [ref=e699]: Only Few Left!
+              - listitem [ref=e700]:
+                - generic [ref=e701]:
+                  - generic [ref=e702]: "4.4"
+                  - generic [ref=e704]:
+                    - generic [ref=e705]: "|"
+                    - text: "368"
+                - link "KEESOR Boys Pack of 3 Cotton T-shirt Rs. 425Rs. 889(52% OFF)" [ref=e706] [cursor=pointer]:
+                  - /url: tshirts/keesor/keesor-boys-pack-of-3-cotton-t-shirt/41244687/buy
+                  - generic [ref=e711]:
+                    - heading "KEESOR" [level=3] [ref=e712]
+                    - heading "Boys Pack of 3 Cotton T-shirt" [level=4] [ref=e713]
+                    - generic [ref=e714]:
+                      - generic [ref=e715]:
+                        - generic [ref=e716]: Rs. 425
+                        - generic [ref=e717]: Rs. 889
+                      - text: (52% OFF)
+              - listitem [ref=e718]:
+                - generic [ref=e719]:
+                  - generic [ref=e720]: "4.1"
+                  - generic [ref=e722]:
+                    - generic [ref=e723]: "|"
+                    - text: 13.7k
+                - link "HELLCAT Boys Pack Of 3 Cotton T-shirt Rs. 391Rs. 3897(90% OFF)" [ref=e724] [cursor=pointer]:
+                  - /url: tshirts/hellcat/hellcat-boys-pack-of-3-printed-cotton-t-shirt/22204306/buy
+                  - generic [ref=e729]:
+                    - heading "HELLCAT" [level=3] [ref=e730]
+                    - heading "Boys Pack Of 3 Cotton T-shirt" [level=4] [ref=e731]
+                    - generic [ref=e732]:
+                      - generic [ref=e733]:
+                        - generic [ref=e734]: Rs. 391
+                        - generic [ref=e735]: Rs. 3897
+                      - text: (90% OFF)
+              - listitem [ref=e736]:
+                - generic [ref=e737]: AD
+                - link "YK Boys Graphic Printed T-Shirt Rs. 260Rs. 1199(78% OFF)" [ref=e738] [cursor=pointer]:
+                  - /url: tshirts/yk/yk-boys-graphic-printed-round-neck-t-shirt/38054581/buy
+                  - generic [ref=e743]:
+                    - heading "YK" [level=3] [ref=e744]
+                    - heading "Boys Graphic Printed T-Shirt" [level=4] [ref=e745]
+                    - generic [ref=e746]:
+                      - generic [ref=e747]:
+                        - generic [ref=e748]: Rs. 260
+                        - generic [ref=e749]: Rs. 1199
+                      - text: (78% OFF)
+              - listitem [ref=e750]:
+                - generic [ref=e751]:
+                  - generic [ref=e752]: "4.8"
+                  - generic [ref=e754]:
+                    - generic [ref=e755]: "|"
+                    - text: "78"
+                - link "Pantaloons Junior Boys Polo Collar T-shirt Rs. 499" [ref=e756] [cursor=pointer]:
+                  - /url: tshirts/pantaloons+junior/pantaloons-junior-boys-polo-collar-pure-cotton-t-shirt/40320331/buy
+                  - generic [ref=e761]:
+                    - heading "Pantaloons Junior" [level=3] [ref=e762]
+                    - heading "Boys Polo Collar T-shirt" [level=4] [ref=e763]
+                    - generic [ref=e764]: Rs. 499
+              - listitem [ref=e766]:
+                - link "NEW Killer Boys Typography Printed T-shirt Rs. 479Rs. 1495(68% OFF)" [ref=e767] [cursor=pointer]:
+                  - /url: tshirts/killer/killer-boys-typography-printed-t-shirt/45009827/buy
+                  - generic [ref=e768]: NEW
+                  - generic [ref=e773]:
+                    - heading "Killer" [level=3] [ref=e774]
+                    - heading "Boys Typography Printed T-shirt" [level=4] [ref=e775]
+                    - generic [ref=e776]:
+                      - generic [ref=e777]:
+                        - generic [ref=e778]: Rs. 479
+                        - generic [ref=e779]: Rs. 1495
+                      - text: (68% OFF)
+              - listitem [ref=e780]:
+                - generic [ref=e781]:
+                  - generic [ref=e782]: "4.9"
+                  - generic [ref=e784]:
+                    - generic [ref=e785]: "|"
+                    - text: "23"
+                - generic [ref=e786]: AD
+                - link "Kids Ville Boys Pure Cotton T-Shirt Rs. 499Rs. 899(44% OFF)" [ref=e787] [cursor=pointer]:
+                  - /url: tshirts/kids+ville/kids-ville-boys-oversized-sonic-modern-printed-pure-cotton-t-shirt/36829746/buy
+                  - generic [ref=e792]:
+                    - heading "Kids Ville" [level=3] [ref=e793]
+                    - heading "Boys Pure Cotton T-Shirt" [level=4] [ref=e794]
+                    - generic [ref=e795]:
+                      - generic [ref=e796]:
+                        - generic [ref=e797]: Rs. 499
+                        - generic [ref=e798]: Rs. 899
+                      - text: (44% OFF)
+              - listitem [ref=e799]:
+                - generic [ref=e800]:
+                  - generic [ref=e801]: "4.4"
+                  - generic [ref=e803]:
+                    - generic [ref=e804]: "|"
+                    - text: 3.6k
+                - link "H&M Cotton T-shirt Rs. 399" [ref=e805] [cursor=pointer]:
+                  - /url: tshirts/h%26m/hm-cotton-t-shirt/41712718/buy
+                  - generic [ref=e810]:
+                    - heading "H&M" [level=3] [ref=e811]
+                    - heading "Cotton T-shirt" [level=4] [ref=e812]
+                    - generic [ref=e813]: Rs. 399
+              - listitem [ref=e815]:
+                - generic [ref=e816]:
+                  - generic [ref=e817]: "4.1"
+                  - generic [ref=e819]:
+                    - generic [ref=e820]: "|"
+                    - text: 4k
+                - link "HELLCAT Boys Pack Of 5 Cotton T-shirt Rs. 685Rs. 6495(89% OFF)" [ref=e821] [cursor=pointer]:
+                  - /url: tshirts/hellcat/hellcat-boys-pack-of-5-graphic-printed-cotton-t-shirt/22204540/buy
+                  - generic [ref=e826]:
+                    - heading "HELLCAT" [level=3] [ref=e827]
+                    - heading "Boys Pack Of 5 Cotton T-shirt" [level=4] [ref=e828]
+                    - generic [ref=e829]:
+                      - generic [ref=e830]:
+                        - generic [ref=e831]: Rs. 685
+                        - generic [ref=e832]: Rs. 6495
+                      - text: (89% OFF)
+              - listitem [ref=e833]:
+                - generic [ref=e834]:
+                  - generic [ref=e835]: "4.6"
+                  - generic [ref=e837]:
+                    - generic [ref=e838]: "|"
+                    - text: "462"
+                - generic [ref=e839]: AD
+                - link "Kids Ville Boys Pure Cotton T-Shirt Rs. 609Rs. 999(39% OFF)" [ref=e840] [cursor=pointer]:
+                  - /url: tshirts/kids+ville/kids-ville-boys-sonic-modern-reversible-sequin-embellished-pure-cotton-t-shirt/36149797/buy
+                  - generic [ref=e845]:
+                    - heading "Kids Ville" [level=3] [ref=e846]
+                    - heading "Boys Pure Cotton T-Shirt" [level=4] [ref=e847]
+                    - generic [ref=e848]:
+                      - generic [ref=e849]:
+                        - generic [ref=e850]: Rs. 609
+                        - generic [ref=e851]: Rs. 999
+                      - text: (39% OFF)
+              - listitem [ref=e852]:
+                - generic [ref=e853]:
+                  - generic [ref=e854]: "4.6"
+                  - generic [ref=e856]:
+                    - generic [ref=e857]: "|"
+                    - text: "57"
+                - link "Here&Now X Game Begins Boys Printed Cotton T-Shirt Rs. 153Rs. 549(72% OFF)" [ref=e858] [cursor=pointer]:
+                  - /url: tshirts/here%26now+x+game+begins/herenow-x-game-begins-boys-graphic-printed-pure-cotton-t-shirt/34858228/buy
+                  - generic [ref=e863]:
+                    - heading "Here&Now X Game Begins" [level=3] [ref=e864]
+                    - heading "Boys Printed Cotton T-Shirt" [level=4] [ref=e865]
+                    - generic [ref=e866]:
+                      - generic [ref=e867]:
+                        - generic [ref=e868]: Rs. 153
+                        - generic [ref=e869]: Rs. 549
+                      - text: (72% OFF)
+              - listitem [ref=e870]:
+                - link "Hopscotch Boys Printed T-shirt Rs. 266Rs. 345(23% OFF)" [ref=e871] [cursor=pointer]:
+                  - /url: tshirts/hopscotch/hopscotch-boys-printed-t-shirt/43121902/buy
+                  - generic [ref=e876]:
+                    - heading "Hopscotch" [level=3] [ref=e877]
+                    - heading "Boys Printed T-shirt" [level=4] [ref=e878]
+                    - generic [ref=e879]:
+                      - generic [ref=e880]:
+                        - generic [ref=e881]: Rs. 266
+                        - generic [ref=e882]: Rs. 345
+                      - text: (23% OFF)
+              - listitem [ref=e883]:
+                - generic [ref=e884]: AD
+                - link "YK Disney Boys Cotton Tshirts Rs. 274Rs. 999(73% OFF)" [ref=e885] [cursor=pointer]:
+                  - /url: tshirts/yk+disney/yk-disney-boys-cotton-tshirts/40525229/buy
+                  - generic [ref=e890]:
+                    - heading "YK Disney" [level=3] [ref=e891]
+                    - heading "Boys Cotton Tshirts" [level=4] [ref=e892]
+                    - generic [ref=e893]:
+                      - generic [ref=e894]:
+                        - generic [ref=e895]: Rs. 274
+                        - generic [ref=e896]: Rs. 999
+                      - text: (73% OFF)
+              - listitem [ref=e897]:
+                - generic [ref=e898]:
+                  - generic [ref=e899]: "4"
+                  - generic [ref=e901]:
+                    - generic [ref=e902]: "|"
+                    - text: 1.6k
+                - link "HELLCAT Boys Pack Of 5 Cotton T-shirt Rs. 685Rs. 6495(89% OFF)" [ref=e903] [cursor=pointer]:
+                  - /url: tshirts/hellcat/hellcat-boys-pack-of-5-printed-cotton-t-shirt/22204516/buy
+                  - generic [ref=e908]:
+                    - heading "HELLCAT" [level=3] [ref=e909]
+                    - heading "Boys Pack Of 5 Cotton T-shirt" [level=4] [ref=e910]
+                    - generic [ref=e911]:
+                      - generic [ref=e912]:
+                        - generic [ref=e913]: Rs. 685
+                        - generic [ref=e914]: Rs. 6495
+                      - text: (89% OFF)
+              - listitem [ref=e915]:
+                - generic [ref=e916]:
+                  - generic [ref=e917]: "4.5"
+                  - generic [ref=e919]:
+                    - generic [ref=e920]: "|"
+                    - text: 4.4k
+                - link "H&M Printed cotton T-shirt Rs. 399" [ref=e921] [cursor=pointer]:
+                  - /url: tshirts/h%26m/hm-printed-cotton-t-shirt/42039179/buy
+                  - generic [ref=e926]:
+                    - heading "H&M" [level=3] [ref=e927]
+                    - heading "Printed cotton T-shirt" [level=4] [ref=e928]
+                    - generic [ref=e929]: Rs. 399
+              - listitem [ref=e931]:
+                - generic [ref=e932]:
+                  - generic [ref=e933]: "4.7"
+                  - generic [ref=e935]:
+                    - generic [ref=e936]: "|"
+                    - text: "6"
+                - generic [ref=e937]: AD
+                - link "NEW NEXT Boys Typography T-shirt Rs. 599 Only Few Left!" [ref=e938] [cursor=pointer]:
+                  - /url: tshirts/next/next-boys-typography-print-t-shirt/43113671/buy
+                  - generic [ref=e939]: NEW
+                  - generic [ref=e944]:
+                    - heading "NEXT" [level=3] [ref=e945]
+                    - heading "Boys Typography T-shirt" [level=4] [ref=e946]
+                    - generic [ref=e947]: Rs. 599
+                    - generic [ref=e949]: Only Few Left!
+              - listitem [ref=e950]:
+                - generic [ref=e951]:
+                  - generic [ref=e952]: "4.1"
+                  - generic [ref=e954]:
+                    - generic [ref=e955]: "|"
+                    - text: "23"
+                - link "Decathlon Boys Short Sleeve T-Shirts Rs. 359Rs. 899(60% OFF)" [ref=e956] [cursor=pointer]:
+                  - /url: tshirts/decathlon/decathlon-boys-red-freedom-of-movement-t-shirt/30317171/buy
+                  - generic [ref=e961]:
+                    - heading "Decathlon" [level=3] [ref=e962]
+                    - heading "Boys Short Sleeve T-Shirts" [level=4] [ref=e963]
+                    - generic [ref=e964]:
+                      - generic [ref=e965]:
+                        - generic [ref=e966]: Rs. 359
+                        - generic [ref=e967]: Rs. 899
+                      - text: (60% OFF)
+              - listitem [ref=e968]:
+                - link "NEW R&B Boys Printed T-shirt Rs. 249" [ref=e969] [cursor=pointer]:
+                  - /url: tshirts/r%26b/rb-boys-printed-pure-cotton-t-shirt/44958323/buy
+                  - generic [ref=e970]: NEW
+                  - generic [ref=e975]:
+                    - heading "R&B" [level=3] [ref=e976]
+                    - heading "Boys Printed T-shirt" [level=4] [ref=e977]
+                    - generic [ref=e978]: Rs. 249
+              - listitem [ref=e980]:
+                - generic [ref=e981]:
+                  - generic [ref=e982]: "4.9"
+                  - generic [ref=e984]:
+                    - generic [ref=e985]: "|"
+                    - text: "18"
+                - generic [ref=e986]: AD
+                - link "NEXT Boys Polo Collar T-shirt Rs. 549Rs. 999(45% OFF) Only Few Left!" [ref=e987] [cursor=pointer]:
+                  - /url: tshirts/next/next-boys-polo-collar-cotton-t-shirt/35940212/buy
+                  - generic [ref=e992]:
+                    - heading "NEXT" [level=3] [ref=e993]
+                    - heading "Boys Polo Collar T-shirt" [level=4] [ref=e994]
+                    - generic [ref=e995]:
+                      - generic [ref=e996]:
+                        - generic [ref=e997]: Rs. 549
+                        - generic [ref=e998]: Rs. 999
+                      - text: (45% OFF)
+                    - generic [ref=e999]: Only Few Left!
+              - listitem [ref=e1000]:
+                - generic [ref=e1001]:
+                  - generic [ref=e1002]: "3.8"
+                  - generic [ref=e1004]:
+                    - generic [ref=e1005]: "|"
+                    - text: "68"
+                - link "PY PINKYOU Boys Cotton Tshirts Rs. 468Rs. 1999(77% OFF)" [ref=e1006] [cursor=pointer]:
+                  - /url: tshirts/py+pinkyou/py-pinkyou-boys-cotton-tshirts/40297760/buy
+                  - generic [ref=e1011]:
+                    - heading "PY PINKYOU" [level=3] [ref=e1012]
+                    - heading "Boys Cotton Tshirts" [level=4] [ref=e1013]
+                    - generic [ref=e1014]:
+                      - generic [ref=e1015]:
+                        - generic [ref=e1016]: Rs. 468
+                        - generic [ref=e1017]: Rs. 1999
+                      - text: (77% OFF)
+              - listitem [ref=e1018]:
+                - generic [ref=e1019]:
+                  - generic [ref=e1020]: "4.5"
+                  - generic [ref=e1022]:
+                    - generic [ref=e1023]: "|"
+                    - text: 4.4k
+                - link "H&M Printed Cotton T-shirt Rs. 319Rs. 399(20% OFF)" [ref=e1024] [cursor=pointer]:
+                  - /url: tshirts/h%26m/hm-printed-cotton-t-shirt/40838386/buy
+                  - generic [ref=e1029]:
+                    - heading "H&M" [level=3] [ref=e1030]
+                    - heading "Printed Cotton T-shirt" [level=4] [ref=e1031]
+                    - generic [ref=e1032]:
+                      - generic [ref=e1033]:
+                        - generic [ref=e1034]: Rs. 319
+                        - generic [ref=e1035]: Rs. 399
+                      - text: (20% OFF)
+              - listitem [ref=e1036]:
+                - generic [ref=e1037]: AD
+                - link "YK Disney Boys Printed Cotton T-shirt Rs. 373Rs. 999(63% OFF)" [ref=e1038] [cursor=pointer]:
+                  - /url: tshirts/yk+disney/yk-disney-boys-toy-story-printed-pure-cotton-casual-t-shirt/28616646/buy
+                  - generic [ref=e1043]:
+                    - heading "YK Disney" [level=3] [ref=e1044]
+                    - heading "Boys Printed Cotton T-shirt" [level=4] [ref=e1045]
+                    - generic [ref=e1046]:
+                      - generic [ref=e1047]:
+                        - generic [ref=e1048]: Rs. 373
+                        - generic [ref=e1049]: Rs. 999
+                      - text: (63% OFF)
+              - listitem [ref=e1050]:
+                - generic [ref=e1051]:
+                  - generic [ref=e1052]: "3.6"
+                  - generic [ref=e1054]:
+                    - generic [ref=e1055]: "|"
+                    - text: "44"
+                - link "Wear Your Mind Boys Printed Regular T-shirt Rs. 371Rs. 999(63% OFF)" [ref=e1056] [cursor=pointer]:
+                  - /url: tshirts/wear+your+mind/wear-your-mind-boys-printed-round-neck-short-sleeves-regular-fit-t-shirt/28410126/buy
+                  - generic [ref=e1061]:
+                    - heading "Wear Your Mind" [level=3] [ref=e1062]
+                    - heading "Boys Printed Regular T-shirt" [level=4] [ref=e1063]
+                    - generic [ref=e1064]:
+                      - generic [ref=e1065]:
+                        - generic [ref=e1066]: Rs. 371
+                        - generic [ref=e1067]: Rs. 999
+                      - text: (63% OFF)
+              - listitem [ref=e1068]:
+                - link "Kidello Boy Girl Solid Cotton Tshirt Rs. 287Rs. 799(64% OFF)" [ref=e1069] [cursor=pointer]:
+                  - /url: tshirts/kidello/kidello-kids-t-shirt/44399466/buy
+                  - generic [ref=e1074]:
+                    - heading "Kidello" [level=3] [ref=e1075]
+                    - heading "Boy Girl Solid Cotton Tshirt" [level=4] [ref=e1076]
+                    - generic [ref=e1077]:
+                      - generic [ref=e1078]:
+                        - generic [ref=e1079]: Rs. 287
+                        - generic [ref=e1080]: Rs. 799
+                      - text: (64% OFF)
+              - listitem [ref=e1081]:
+                - generic [ref=e1082]:
+                  - generic [ref=e1083]: "4.6"
+                  - generic [ref=e1085]:
+                    - generic [ref=e1086]: "|"
+                    - text: "105"
+                - generic [ref=e1087]: AD
+                - link "U.S. Polo Assn. Kids Boys Brand Logo Printed T-shirt Rs. 649Rs. 999(35% OFF)" [ref=e1088] [cursor=pointer]:
+                  - /url: tshirts/u.s.+polo+assn.+kids/us-polo-assn-kids-boys-brand-logo-printed-t-shirt/32482809/buy
+                  - generic [ref=e1093]:
+                    - heading "U.S. Polo Assn. Kids" [level=3] [ref=e1094]
+                    - heading "Boys Brand Logo Printed T-shirt" [level=4] [ref=e1095]
+                    - generic [ref=e1096]:
+                      - generic [ref=e1097]:
+                        - generic [ref=e1098]: Rs. 649
+                        - generic [ref=e1099]: Rs. 999
+                      - text: (35% OFF)
+              - listitem [ref=e1100]
+              - listitem [ref=e1101]
+              - listitem
+              - listitem
+              - listitem
+            - list [ref=e1103]:
+              - listitem: Page 1
+              - listitem: Previous
+              - listitem [ref=e1104]: Page 1 of 1483
+              - listitem [ref=e1105] [cursor=pointer]: Next
+            - generic [ref=e1109]:
+              - generic [ref=e1110]: Similar Products
+              - generic [ref=e1111] [cursor=pointer]: ✕
+    - paragraph [ref=e1116] [cursor=pointer]: UPTO ₹300 OFF
+  - contentinfo [ref=e1120]:
+    - generic [ref=e1121]:
+      - generic [ref=e1122]:
+        - generic [ref=e1123]:
+          - paragraph [ref=e1124]:
+            - link "ONLINE SHOPPING" [ref=e1125] [cursor=pointer]:
+              - /url: /?src=onlineShopping
+          - link "Men" [ref=e1126] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=e1127] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=e1128] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=e1129] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=e1130] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=e1131] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - link "Gift Cards" [ref=e1132] [cursor=pointer]:
+            - /url: /giftcard
+          - link "Myntra Insider" [ref=e1133] [cursor=pointer]:
+            - /url: /myntrainsider?cache=false
+          - paragraph [ref=e1134]: USEFUL LINKS
+          - link "Blog" [ref=e1135] [cursor=pointer]:
+            - /url: http://blog.myntra.com/
+          - link "Careers" [ref=e1136] [cursor=pointer]:
+            - /url: https://careers.myntra.com
+          - link "Site Map" [ref=e1137] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Corporate Information" [ref=e1138] [cursor=pointer]:
+            - /url: /corp-info
+          - link "Whitehat" [ref=e1139] [cursor=pointer]:
+            - /url: /security/whitehat
+          - link "Cleartrip" [ref=e1140] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Myntra Global" [ref=e1141] [cursor=pointer]:
+            - /url: https://www.myntraglobal.com/
+        - generic [ref=e1142]:
+          - paragraph [ref=e1143]: CUSTOMER POLICIES
+          - link "Contact Us" [ref=e1144] [cursor=pointer]:
+            - /url: /contactus
+          - link "FAQ" [ref=e1145] [cursor=pointer]:
+            - /url: /faqs
+          - link "T&C" [ref=e1146] [cursor=pointer]:
+            - /url: /tac
+          - link "Terms Of Use" [ref=e1147] [cursor=pointer]:
+            - /url: /termsofuse
+          - link "Track Orders" [ref=e1148] [cursor=pointer]:
+            - /url: /my/orders
+          - link "Shipping" [ref=e1149] [cursor=pointer]:
+            - /url: /faqs#shipping
+          - link "Cancellation" [ref=e1150] [cursor=pointer]:
+            - /url: /faqs#cancel
+          - link "Privacy policy" [ref=e1151] [cursor=pointer]:
+            - /url: /privacypolicy
+          - link "Grievance Redressal" [ref=e1152] [cursor=pointer]:
+            - /url: /grievanceredressal
+          - link "FSSAI Food Safety Connect app" [ref=e1153] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1154]:
+          - paragraph [ref=e1155]: EXPERIENCE MYNTRA APP ON MOBILE
+          - generic:
+            - link:
+              - /url: https://play.google.com/store/apps/details?id=com.myntra.android
+            - link:
+              - /url: https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059
+          - generic [ref=e1156]: KEEP IN TOUCH
+          - link [ref=e1157] [cursor=pointer]:
+            - /url: https://www.facebook.com/myntra
+          - link:
+            - /url: https://twitter.com/myntra
+          - link:
+            - /url: https://www.youtube.com/user/myntradotcom
+          - link:
+            - /url: https://www.instagram.com/myntra
+        - generic [ref=e1159]:
+          - generic [ref=e1163]:
+            - strong [ref=e1164]: 100% ORIGINAL
+            - text: guarantee for all products at myntra.com
+          - generic [ref=e1168]:
+            - strong [ref=e1169]: Return within 14days
+            - text: of receiving your order
+      - generic [ref=e1171]:
+        - separator [ref=e1172]
+        - generic [ref=e1173]: POPULAR SEARCHES
+        - generic [ref=e1174]:
+          - link "Adidas |" [ref=e1175] [cursor=pointer]:
+            - /url: /adidas
+          - link "Arrow |" [ref=e1176] [cursor=pointer]:
+            - /url: /arrow
+          - link "Fila |" [ref=e1177] [cursor=pointer]:
+            - /url: /fila
+          - link "Online Shopping |" [ref=e1178] [cursor=pointer]:
+            - /url: /
+          - link "Nike |" [ref=e1179] [cursor=pointer]:
+            - /url: /nike
+          - link "Pepe Jeans |" [ref=e1180] [cursor=pointer]:
+            - /url: /pepe-jeans
+          - link "Puma |" [ref=e1181] [cursor=pointer]:
+            - /url: /puma
+          - link "United Colors of Benetton |" [ref=e1182] [cursor=pointer]:
+            - /url: /united-colors-of-benetton
+          - link "Fastrack |" [ref=e1183] [cursor=pointer]:
+            - /url: /fastrack
+          - link "Shorts |" [ref=e1184] [cursor=pointer]:
+            - /url: /men-shorts
+          - link "Being Human |" [ref=e1185] [cursor=pointer]:
+            - /url: /being-human
+          - link "Skirts |" [ref=e1186] [cursor=pointer]:
+            - /url: /women-shorts-skirts
+          - link "Woodland |" [ref=e1187] [cursor=pointer]:
+            - /url: /woodland
+          - link "Supra |" [ref=e1188] [cursor=pointer]:
+            - /url: /supra
+          - link "Dresses |" [ref=e1189] [cursor=pointer]:
+            - /url: /dresses
+          - link "Clothing |" [ref=e1190] [cursor=pointer]:
+            - /url: /clothing
+          - link "Jewellery |" [ref=e1191] [cursor=pointer]:
+            - /url: /jewellery
+          - link "T-shirts |" [ref=e1192] [cursor=pointer]:
+            - /url: /tshirts
+          - link "Shoes |" [ref=e1193] [cursor=pointer]:
+            - /url: /shoes
+          - link "Bags |" [ref=e1194] [cursor=pointer]:
+            - /url: /bags
+          - link "Watches |" [ref=e1195] [cursor=pointer]:
+            - /url: /watches
+          - link "Caps |" [ref=e1196] [cursor=pointer]:
+            - /url: /caps
+          - link "Shirts |" [ref=e1197] [cursor=pointer]:
+            - /url: /shirts
+          - link "Backpacks |" [ref=e1198] [cursor=pointer]:
+            - /url: /backpacks
+          - link "Flip Flops |" [ref=e1199] [cursor=pointer]:
+            - /url: /flip-flops
+          - link "Sunglasses |" [ref=e1200] [cursor=pointer]:
+            - /url: /sunglasses
+          - link "Kurtas |" [ref=e1201] [cursor=pointer]:
+            - /url: /kurtas
+          - link "Lingerie |" [ref=e1202] [cursor=pointer]:
+            - /url: /lingerie
+          - link "Jackets |" [ref=e1203] [cursor=pointer]:
+            - /url: /jackets
+          - link "Skechers |" [ref=e1204] [cursor=pointer]:
+            - /url: /skechers
+          - link "Saree |" [ref=e1205] [cursor=pointer]:
+            - /url: /saree
+          - link "Sandals |" [ref=e1206] [cursor=pointer]:
+            - /url: /sandals
+          - link "Puma Tshirts |" [ref=e1207] [cursor=pointer]:
+            - /url: /puma-tshirts
+          - link "Woodland Shoes |" [ref=e1208] [cursor=pointer]:
+            - /url: /woodland-shoes
+          - link "Titan Watches |" [ref=e1209] [cursor=pointer]:
+            - /url: /titan-watches
+          - link "Fastrack Watches |" [ref=e1210] [cursor=pointer]:
+            - /url: /fastrack-watches
+          - link "Wrangler Shirts |" [ref=e1211] [cursor=pointer]:
+            - /url: /wrangler-shirts
+          - link "Adidas Tshirts |" [ref=e1212] [cursor=pointer]:
+            - /url: /adidas-tshirts
+          - link "Nike Shoes |" [ref=e1213] [cursor=pointer]:
+            - /url: /nike-shoes
+          - link "Roadster Shirts |" [ref=e1214] [cursor=pointer]:
+            - /url: /roadster-shirts
+          - link "Casual Shoes |" [ref=e1215] [cursor=pointer]:
+            - /url: /casual-shoes
+          - link "Running Shoes |" [ref=e1216] [cursor=pointer]:
+            - /url: /running-shoes
+          - link "Nike Sports Shoes |" [ref=e1217] [cursor=pointer]:
+            - /url: /nike-sports-shoes
+          - link "Jeans |" [ref=e1218] [cursor=pointer]:
+            - /url: /jeans
+          - link "Being Human Tshirts |" [ref=e1219] [cursor=pointer]:
+            - /url: /being-human-tshirts
+          - link "Converse Shoes |" [ref=e1220] [cursor=pointer]:
+            - /url: /converse-shoes
+          - link "Cricket Shoes" [ref=e1221] [cursor=pointer]:
+            - /url: /cricket-shoes
+      - generic [ref=e1222]:
+        - generic [ref=e1223]:
+          - text: In case of any concern,
+          - link "Contact Us" [ref=e1224] [cursor=pointer]:
+            - /url: /contactus
+        - generic [ref=e1225]: © 2026 www.myntra.com. All rights reserved.
+        - link "A Flipkart company" [ref=e1227] [cursor=pointer]:
+          - /url: https://www.flipkart.com/
+```
+
+# Test source
+
+```ts
+  1  | 
+  2  | import { test } from '@playwright/test';
+  3  | 
+  4  | test('Myntra Minimum Price', async ({ page }) => {
+  5  |     let result = await MinPriceProduct(page,'https://www.myntra.com/boy-tshirts');
+  6  | 
+  7  |     async function MinPriceProduct(page, url) {
+  8  |     await page.goto(url);
+  9  | 
+  10 |     let price = await page.locator('//li[@class="product-base"]/descendant::div[@class="product-price"]/span[span[@class="product-discountedPrice"] or text() and not(@class)]').allTextContents();
+  11 | 
+  12 |     let amount = price.map(product => Number(product.match(/\d+/g)[0]));
+  13 |     let min = Math.min(...amount);
+  14 |     
+  15 | 
+  16 |     let minPriceTitle = await page.locator(`//li[@class="product-base"]/descendant::div[@class="product-price"]/span[span[@class="product-discountedPrice" and contains(., "${min}")]or(contains(., "${min}") and not(@class))]/ancestor::li/descendant::h4[@class="product-product"]`).allTextContents();
+  17 | 
+  18 |     return {
+  19 |         minPrice: min,
+  20 |         productTitle: minPriceTitle
+  21 |     };
+  22 | }
+> 23 |     console.log("Minimum Price:", min);
+     |                                   ^ ReferenceError: min is not defined
+  24 |     console.log("Product Title:", result.productTitle);
+  25 | })
+```
