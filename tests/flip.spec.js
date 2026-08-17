@@ -6,10 +6,10 @@ import{test} from '@playwright/test'
    console.log(url);
    console.log(title);
    await page. goto("https://www.instagram.com/");
-  //   let u= await page. url();
-  //   let t= await page.title();
-  //  console.log(u);
-  //  console.log(t);
+    let u= await page. url();
+    let t= await page.title();
+   console.log(u);
+   console.log(t);
    await page.goBack();
    await page. reload();
    await page . goForward();
@@ -17,12 +17,5 @@ import{test} from '@playwright/test'
   });
 
 
-
-
-// import{test} from "@playwright/test";
-// test ("red_bus", async ({page})=>{
-//     await page.goto("https://www.redbus.in/");
-
-// })
 
 
