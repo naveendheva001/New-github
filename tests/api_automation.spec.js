@@ -1,6 +1,6 @@
 import {test,expect} from "@playwright/test";
 
-test ('api_testing',async({request})=>{
+test ('API Testing - Get Post by ID',async({request})=>{
      const response=await request.get('https://jsonplaceholder.typicode.com/posts/1');
 
      expect(response.status()).toBe(200);
@@ -9,8 +9,16 @@ test ('api_testing',async({request})=>{
 
      console.log(responseBody);
 
-     expect(responseBody.id).toBe(1);
-     expect(responseBody.userId).toBe(1);
+      expect(responseBody.id).toBe(1);
+      expect(responseBody.userId).toBe(1);
+      expect(responseBody.title).toBe("sunt aut facere repellat provident occaecati excepturi optio reprehenderit");
+      expect(responseBody.body).toBe("quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto");
+     
+    //json schema validate
+     expect (responseBody).toHaveProperty("id");
+     expect (responseBody).toHaveProperty("title");
+     expect (responseBody).toHaveProperty("userId");
+     expect (responseBody).toHaveProperty("body");
 
 })
 
@@ -39,7 +47,7 @@ test ('api_test_put',async({request})=>{
     const response= await request.put('https://jsonplaceholder.typicode.com/posts/3',{
     data: {
          "userId": 5,
-  "id": 1000,
+  "id": 106,
   "title": "api testing put",
   "body": "put"
     }
