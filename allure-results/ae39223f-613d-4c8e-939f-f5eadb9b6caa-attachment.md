@@ -1,0 +1,35 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: api_automation.spec.js >> api_testing
+- Location: tests\api_automation.spec.js:3:5
+
+# Error details
+
+```
+TypeError: Cannot read properties of undefined (reading 'id')
+```
+
+# Test source
+
+```ts
+  1  | import {test,expect} from "@playwright/test";
+  2  | 
+  3  | test ('api_testing',async({request})=>{
+  4  |      const response=await request.get('https://jsonplaceholder.typicode.com/posts/1');
+  5  |      expect(response.status()).toBe(200);
+  6  |      const responseBody= await response.json();
+  7  |      console.log(responseBody);
+  8  | 
+> 9  |      expect (responseBody.data.id()).toBe(1);
+     |                                ^ TypeError: Cannot read properties of undefined (reading 'id')
+  10 | 
+  11 |      
+  12 | 
+  13 | })
+```
